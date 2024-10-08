@@ -94,3 +94,6 @@ pip install numpy pandas matplotlib seaborn scikit-learn xgboost nltk torch tens
 The notebook outputs several evaluation metrics, including accuracy, precision, recall, and F1-score. Confusion matrices are visualized to provide a clearer understanding of model performance on the IMDB dataset.
 
 - Best Accuracy: 88.21% using tuned BiLSTM with GloVe Embeddings.
+
+# License
+This project is licensed under the MIT License. See the LICENSE file for more details.
