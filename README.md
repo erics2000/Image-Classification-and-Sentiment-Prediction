@@ -96,4 +96,5 @@ The notebook outputs several evaluation metrics, including accuracy, precision, 
 - Best Accuracy: 88.21% using tuned BiLSTM with GloVe Embeddings.
 
 # License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the [MIT License](./LICENSE). See the [LICENSE](./LICENSE) file for more details.
+
