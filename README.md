@@ -75,16 +75,20 @@ The dataset used is the IMDB Dataset of 50K Movie Reviews, which consists of mov
 
 The following libraries are required to run the notebook:
 
-- numpy: For numerical computations.
-- pandas: For data manipulation.
-- matplotlib: For data visualization.
-- seaborn: For enhanced visualizations.
-- sklearn: For machine learning models and evaluation metrics.
-- xgboost: For gradient boosting classifier.
-- nltk: For text preprocessing (tokenization, stop-word removal).
-- torch: For deep learning models using PyTorch.
-- tensorflow: For alternative deep learning models and text preprocessing.
-
+- `numpy`: For numerical computations.
+- `pandas`: For data manipulation.
+- `matplotlib`: For data visualization.
+- `seaborn`: For enhanced visualizations.
+- `sklearn`: For machine learning models and evaluation metrics.
+- `xgboost`: For gradient boosting classifier.
+- `nltk`: For text preprocessing (tokenization, stop-word removal).
+- `torch`: For deep learning models using PyTorch.
+- `tensorflow`: For alternative deep learning models and text preprocessing.
+  
+You can install the dependencies using the following command:
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn xgboost nltk torch tensorflow
+```
 ## Results
 
 The notebook outputs several evaluation metrics, including accuracy, precision, recall, and F1-score. Confusion matrices are visualized to provide a clearer understanding of model performance on the IMDB dataset.
