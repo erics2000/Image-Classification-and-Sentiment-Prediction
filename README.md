@@ -49,15 +49,44 @@ The notebook includes visualizations for training and validation accuracy, loss 
 
 # Sentiment Analysis of IMDB Review
 
-- **Image Preprocessing**: Handles normalization, resizing, and augmentation of images.
-- **Model Training**: Supports different models from popular deep learning frameworks.
-- **Evaluation Metrics**: Computes accuracy, loss, and other relevant metrics for model performance.
-- **Prediction and Visualization**: Includes methods for model inference and visualization of results.
+## Introduction
 
-## Installation
+This notebook focuses on building a comprehensive NLP pipeline for binary sentiment classification using movie reviews from the IMDB dataset. The notebook includes text preprocessing steps, feature extraction techniques (e.g., TF-IDF, Bag of Words, Word2Vec, and GloVe), and model training using classifiers such as Logistic Regression, XGBoost, and deep learning models.
 
-To run the notebook, you will need to clone this repository and install the required dependencies.
+## Dataset
 
-```bash
-git clone https://github.com/yourusername/CV_Pipeline.git
-cd CV_Pipeline
+The dataset used is the IMDB Dataset of 50K Movie Reviews, which consists of movie reviews labeled as positive or negative. It is available on Kaggle.
+
+## Features
+
+- Data Preprocessing: Includes tokenization, stop-word removal, stemming, and text cleaning.
+- Feature Extraction: Implements TF-IDF, Bag of Words, Word2Vec, and GloVe embeddings.
+- Modeling: Trains models using Logistic Regression, XGBoost, and other classifiers.
+- Performance Evaluation: Evaluates models using metrics such as accuracy, precision, recall, F1-score, and confusion matrices.
+- Hyperparameter Tuning: Uses GridSearchCV and RandomizedSearchCV to optimize model performance.
+
+## Models
+
+- Logistic Regression: For both Bag of Words and TF-IDF features.
+- XGBoost Classifier: Implemented with various feature extraction techniques (TF-IDF, Bag of Words, Word2Vec, and GloVe).
+- Deep Learning (RNNs/CNNs): Using GloVe embeddings and PyTorch or TensorFlow for model building.
+
+## Dependencies
+
+The following libraries are required to run the notebook:
+
+- numpy: For numerical computations.
+- pandas: For data manipulation.
+- matplotlib: For data visualization.
+- seaborn: For enhanced visualizations.
+- sklearn: For machine learning models and evaluation metrics.
+- xgboost: For gradient boosting classifier.
+- nltk: For text preprocessing (tokenization, stop-word removal).
+- torch: For deep learning models using PyTorch.
+- tensorflow: For alternative deep learning models and text preprocessing.
+
+## Results
+
+The notebook outputs several evaluation metrics, including accuracy, precision, recall, and F1-score. Confusion matrices are visualized to provide a clearer understanding of model performance on the IMDB dataset.
+
+- Best Accuracy: 88.21% using tuned BiLSTM with GloVe Embeddings.
